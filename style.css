@@ -1,0 +1,9 @@
+body {
+  background: url('https://media.licdn.com/dms/image/v2/D5622AQGKM4Q-0Eu3lQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1701254576326?e=2147483647&v=beta&t=CUBwESlVMYFwWin6cYDc9hpHaYIxVIEiE6rMmb43ce8') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
