@@ -1,5 +1,5 @@
 body {
-  background: url('https://media.licdn.com/dms/image/v2/D5622AQGKM4Q-0Eu3lQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1701254576326?e=2147483647&v=beta&t=CUBwESlVMYFwWin6cYDc9hpHaYIxVIEiE6rMmb43ce8') no-repeat center center fixed;
+  background: url('https://www.google.com/imgres?q=cute%20penguin%20cartoon&imgurl=https%3A%2F%2Fwww.shutterstock.com%2Fimage-vector%2Fcute-penguin-cartoon-vector-happy-600nw-2527129089.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fcartoon-cute-penguin&docid=Ycn00v7mQ7EpTM&tbnid=R1Gx1JB7pMzDMM&vet=12ahUKEwjGzMvx1s6MAxVCIjQIHbleIpIQM3oECEsQAA..i&w=600&h=600&hcb=2&ved=2ahUKEwjGzMvx1s6MAxVCIjQIHbleIpIQM3oECEsQAA') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Arial', sans-serif;
   display: flex;
@@ -7,3 +7,70 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  /* 1. Popup Styles */
+.popup {
+  display: none; /* Initially hidden */
+  position: fixed; /* Fixed position on screen */
+  z-index: 1; /* Ensure it’s above other content */
+  left: 0; /* Align to the left */
+  top: 0; /* Align to the top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  text-align: center; /* Center the content */
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
+}
+
+/* 2. Popup content styling */
+.popup-content {
+  background-color: white; /* White background for the content */
+  padding: 20px; /* Padding around the content */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Shadow around the content */
+  width: 80%; /* Width of the content */
+  max-width: 400px; /* Max width of the content */
+  margin: auto; /* Center the content */
+  position: relative; /* To position the close button correctly */
+}
+
+/* 3. Title style */
+.popup-content h2 {
+  color: #ff3366; /* Pink color for the title */
+}
+
+/* 4. Love message style */
+.popup-content p {
+  font-size: 18px; /* Font size for the message */
+  color: #333; /* Dark gray text color */
+}
+
+/* 5. Close button style */
+.close {
+  position: absolute; /* Position the close button in the top right corner */
+  top: 10px; /* 10px from the top */
+  right: 10px; /* 10px from the right */
+  font-size: 30px; /* Larger font for the close button */
+  color: #ff3366; /* Pink color */
+  cursor: pointer; /* Change the cursor to a pointer */
+  font-weight: bold; /* Make the close button bold */
+}
+
+/* 6. Style for the main button */
+button {
+  padding: 10px 20px; /* Padding for the button */
+  background-color: #ff3366; /* Pink button */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background 0.3s; /* Smooth background color transition */
+}
+
+/* 7. Button hover effect */
+button:hover {
+  background-color: #e6005c; /* Darker pink on hover */
+}
+
+  
