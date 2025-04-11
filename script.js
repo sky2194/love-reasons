@@ -11,3 +11,12 @@ function showReason() {
   const randomIndex = Math.floor(Math.random() * reasons.length);
   document.getElementById("reason").textContent = reasons[randomIndex];
 }
+// 1. Function to show the pop-up
+function showPopup() {
+  document.getElementById("popup").style.display = "flex"; // Make the pop-up visible
+}
+
+// 2. Function to close the pop-up
+function closePopup() {
+  document.getElementById("popup").style.display = "none"; // Hide the pop-up
+}
