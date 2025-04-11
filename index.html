@@ -2,26 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>100 Reasons Why I Love You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reasons I Love You 💖</title>
+
+  <!-- Google Fonts for cute modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Your custom styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>💖 100 Reasons Why I Love You 💖</h1>
-    <p id="reason">Click the button to see a reason!</p>
-    <button onclick="showReason()">Show Me!</button>
-  </div>
-  <script src="script.js"></script>
-  <!-- 1. Love Letter Pop-up -->
-<div id="popup" class="popup">
-  <div class="popup-content">
-    <span class="close" onclick="closePopup()">×</span> <!-- Close button -->
-    <h2>Your Love Letter 💖</h2> <!-- Title -->
-    <p id="loveLetterMessage">Jaya doling 🐻 !</p> <!-- Love message -->
-  </div>
-</div>
 
-<!-- 2. Button to show the pop-up -->
-<button onclick="showPopup()">Read My Love Letter</button> <!-- Button triggers pop-up -->
+  <!-- Main container holding the love content -->
+  <div class="container">
+    <h1>💖 Reasons Why I Love You 💖</h1>
+
+    <!-- Reasons List (Add more if you want) -->
+    <div class="reason">You’re my best friend</div>
+    <div class="reason">You always make me laugh</div>
+    <div class="reason">You make my world better</div>
+
+    <!-- Button to open the love letter popup -->
+    <button onclick="showLetter()">Open Love Letter 💌</button>
+  </div>
+
+  <!-- Hidden Love Letter Popup -->
+  <div class="love-letter" id="loveLetter">
+    <h2>Dear Love,</h2>
+    <p>
+      You are the most beautiful part of my life. Every moment with you feels magical.  
+      I made this to remind you how much you mean to me.  
+      Forever yours ❤️
+    </p>
+    <button onclick="hideLetter()">Close</button>
+  </div>
+
+  <!-- Script for showing/hiding the love letter -->
+  <script src="script.js"></script>
 </body>
 </html>

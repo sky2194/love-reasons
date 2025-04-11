@@ -20,3 +20,11 @@ function showPopup() {
 function closePopup() {
   document.getElementById("popup").style.display = "none"; // Hide the pop-up
 }
+
+function showLetter() {
+  document.getElementById("loveLetter").style.display = "block";
+}
+
+function hideLetter() {
+  document.getElementById("loveLetter").style.display = "none";
+}
